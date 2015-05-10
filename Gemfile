@@ -43,3 +43,5 @@ gem 'coffee-script-source', '1.8.0'
 gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.3.4'
+
+gem 'carrierwave'

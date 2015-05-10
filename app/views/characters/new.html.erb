@@ -1,0 +1,13 @@
+<h2>Creating a new character:</h2>
+<%= form_for @character, :html => { :multipart => true } do |c| %>
+	<p>
+		<%= c.label :name %> <br/>
+		<%= c.text_field :name %><br/>
+	</p>
+	<p>
+		<%= c.file_field :avatar %>
+	</p>
+	<p>
+		<%= c.submit "Add the character" %>
+	</p>
+<% end %>
