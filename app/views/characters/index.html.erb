@@ -1,4 +1,7 @@
 <h1>Characters:</h1>
-
-
+<%= paginate @characters %><br/>
+<% @characters.all.each do |c| %>
+	<%= image_tag c.avatar.url, size: "50x50"  %><%= c.name.to_s %>
+	<%= link_to("Edit", edit_character_path(c) ) %><br/>
+<% end %>
 <%= link_to("Create a new character!", new_character_path) %>
